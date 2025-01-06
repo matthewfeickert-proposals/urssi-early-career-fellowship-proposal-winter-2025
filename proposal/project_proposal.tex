@@ -1,0 +1,115 @@
+\documentclass[letterpaper, 11pt]{article}
+\usepackage[left=2cm, top=2.5cm, right=2cm, bottom=2cm]{geometry}
+
+\usepackage[colorlinks = true,
+linkcolor = blue,
+urlcolor  = blue,
+citecolor = blue,
+anchorcolor = blue]{hyperref}
+
+\usepackage[dvipsnames]{xcolor}
+
+\newcommand\bb[1]{\mbox{\em #1}}
+\def\baselinestretch{1.05}
+
+\newcommand{\hsp}{\hspace*{\parindent}}
+\definecolor{gray}{rgb}{0.4,0.4,0.4}
+
+\usepackage{siunitx}
+\sisetup{range-phrase={\text{--}},range-units=single}
+
+\usepackage{multibib}
+\newcites{main}{References}
+
+\linespread{1.0}
+
+\hyphenation{ATLAS}
+
+\usepackage{fancyhdr}
+\usepackage{pagecounting}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\newcommand{\institute}{UW--Madison}
+\newcommand{\fullinstitute}{University of Wisconsin--Madison}
+\newcommand{\department}{Physics}
+\newcommand{\lhcexperiment}{ATLAS}
+
+\newcommand{\pyhf}{\texttt{pyhf}}
+
+\lhead{
+  \textcolor{gray}{\textit{Matthew Feickert}}\\
+  \href{mailto:matthew.feickert@cern.ch}{matthew.feickert@cern.ch}
+}
+\rhead{\textcolor{gray}{\href{https://urssi.us/blog/2024/11/22/call-for-proposals-for-the-urssi-early-career-fellowship-program/}{URSSI Fellowship Winter 2025}\\%
+\thepage/\totalpages{}}}
+\chead{\Large\scshape\color[HTML]{CF000F} Project Proposal}
+
+\begin{document}
+\pagestyle{fancy}
+
+% * [ ] A concise research proposal (e.g. 2-3 pages)
+
+% * Make sure to include short (on the road to tenure), medium (10-15 years), and long term ideas (where is career going post LHC) in the research statement
+
+% Successful candidates for the second position on “scientific software infrastructure” will seek to advance the **reliable and efficient development and application of artificial intelligence/machine learning methods through the development of scalable, extensible, and interoperable software, including platforms that support computational reproducibility and open science**.
+% Scientific domain questions of interest include the data-driven discovery of new materials to address climate change based on AI/ML and high-dimensional sparse statistics.
+% We will consider creative and energetic candidates who show promise and/or accomplishment in research, teaching, and mentoring.
+% The Department of Statistics offers a PhD program, a professional master’s program, and undergraduate majors in Statistics and in Data Science (the latter jointly with EECS).
+% In particular, the Statistics and Data Science majors provide opportunities to develop domain emphasis courses related to scientific computing and machine learning in chemistry, physics, and materials science.
+% The person offered this position would have the opportunity to engage in teaching, course development, and mentoring for each of these programs.
+% They would join a diverse group of colleagues in the Departments of Statistics and EECS, with world-renowned expertise in both AI/ML and open-source scientific computing, and a sustained tradition of collaboration in data science with disciplines spanning the natural and social sciences.
+% They would have the opportunity to interact and collaborate with colleagues in the Departments of Chemistry, Materials Science and Engineering, and Physics, among others, as well as a possible future interdisciplinary department in CDSS, BIDMaP, and the nearby Lawrence Berkeley National Laboratory.
+
+% * this is mainly written to a HEP audience, but the opening is for any experimental physics. I would add a little bit at the beginning to contextualize your work in HEP for a non-HEP audience.
+%    - this also applies to the cover letter. Re-read your opening paragraph with the idea that the audience includes non HEP people.
+% * You don’t say much about AI. One opportunity is in section 3 when you talk about SBI. You might make it explicit that the SBI revolution is powered by AI/ML and also maybe add a few sentences for those that don’t know what SBI is.
+%    - you might consider putting AI into the section title for section 3
+% * in section 4 you might connect differentiable programming and automatic differentiation to AI. You may know about the quote from Yann LeCun “deep learning is dead, long live differentiable programming”
+
+\section{Project Goals and Objectives}
+
+State the track that your project is most closely aligned with; Provide a brief overview of the project including related research, and previous efforts; and, Provide clear, measurable goals that will be accomplished within 6 months. Include specific objectives that contribute to the broader URSSI mission and research track.
+
+\section{Expected Impact on Scientific Software Community}
+
+Direct and indirect benefits to the research software community. How will your work improve scientific software development practices?
+
+\section{Implementation Plan}
+
+Month-by-month breakdown of activities, methods, and approaches. Include specific milestones and check-in points.
+
+\section{Community Engagement Strategy}
+
+How will you involve and benefit the broader scientific software community? Include specific outreach and collaboration plans.
+
+\section{Evaluation Metrics}
+
+Concrete ways to measure project success. Include both quantitative and qualitative metrics.
+
+\section{Timeline and Deliverables}
+
+Specific six-month timeline with monthly milestones and concrete deliverables. Example structure:
+
+\begin{itemize}
+  \item Month 1: Project setup and initial research
+  \item Month 2-3: Development/Investigation phase
+  \item Month 4-5: Testing/Validation/Analysis
+  \item Month 6: Documentation and dissemination
+\end{itemize}
+
+\section{Summary}
+
+If needed
+
+%
+\vspace*{-0.25cm}
+\begin{footnotesize}
+%
+ \bibliographystylemain{atlasBibStyleWithTitle}
+ \bibliographymain{main}
+ %\nocitemain{*}
+%
+\end{footnotesize}
+\end{document}
