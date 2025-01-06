@@ -42,11 +42,11 @@ The first cohort of URSSI Fellows will start on 1 February 2025 and end 31 July 
 
 For the Winter 2025 cohort of fellows we are specifically looking for projects in one of the three following areas:
 
-1. AI/ML Integration in Scientific Software Development: We are interested in supporting research or evidence-based best practices for integrating AI/ML tools in scientific software development. We welcome projects that investigate basic research questions (e.g., detecting the prevalence of AI code in science) as well as applied projects that may have the goal of informing policy or practices within a specific research domain. We are particularly interested in the integration of AI for validation, reliability, and reproducibility checks.
+1. **AI/ML Integration in Scientific Software Development:** We are interested in supporting research or evidence-based best practices for integrating AI/ML tools in scientific software development. We welcome projects that investigate basic research questions (e.g., detecting the prevalence of AI code in science) as well as applied projects that may have the goal of informing policy or practices within a specific research domain. We are particularly interested in the integration of AI for validation, reliability, and reproducibility checks.
 
-2. Scientific Software Sustainability: We would like to support researchers developing scientific software (biology, earth sciences, physics, etc.) to extend or improve practices within that domain. Example projects could include: Developing domain-specific software sustainability audits (e.g., identifying critical dependencies); creating assessment tools for research software reliability; or implementing methods for automated documentation generation (e.g., LLM assisted).
+2. **Scientific Software Sustainability:** We would like to support researchers developing scientific software (biology, earth sciences, physics, etc.) to extend or improve practices within that domain. Example projects could include: Developing domain-specific software sustainability audits (e.g., identifying critical dependencies); creating assessment tools for research software reliability; or implementing methods for automated documentation generation (e.g., LLM assisted).
 
-3. Software Education Research: URSSI runs a semi-annual school (2–3 days of co-located classroom work) to train researchers to use best practices in research software development. We would like to collaborate with education researchers to design an evaluation of these schools. This would include working closely with URSSI Winter/Spring/Fall/Summer School instructors. Projects may focus on:
+3. **Software Education Research:** URSSI runs a semi-annual school (2–3 days of co-located classroom work) to train researchers to use best practices in research software development. We would like to collaborate with education researchers to design an evaluation of these schools. This would include working closely with URSSI Winter/Spring/Fall/Summer School instructors. Projects may focus on:
 
 * Analyzing existing software training programs
 * Developing evidence-based curriculum recommendations
@@ -97,10 +97,10 @@ Incomplete applications will not be reviewed.
 
 ### Important Dates
 
-* Application deadline: 15 January 2025 at 11:59 PM PST
-* Notification: end of January 2025
-* First cohort kickoff: 1 February 2025
-* First cohort end: 31 July 2025
+* **Application deadline**: 15 January 2025 at 11:59 PM PST
+* **Notification**: end of January 2025
+* **First cohort kickoff**: 1 February 2025
+* **First cohort end**: 31 July 2025
 
 ### FAQs
 
