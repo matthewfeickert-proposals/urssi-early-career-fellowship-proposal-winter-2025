@@ -60,3 +60,15 @@ Total Requested: $
 _Please provide a brief justification for each category (2-3 sentences)._
 
 ## Itemized Budget and Justification
+
+1. Stipend/salary:
+
+* X
+
+2. Travel
+
+* $5,000 USD to provide travel support for
+
+3. Research Resources (< $10k):
+
+4. Other Direct Costs
