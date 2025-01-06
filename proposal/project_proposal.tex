@@ -35,6 +35,8 @@ anchorcolor = blue]{hyperref}
 \newcommand{\fullinstitute}{University of Wisconsin--Madison}
 \newcommand{\department}{Physics}
 \newcommand{\lhcexperiment}{ATLAS}
+\newcommand{\fullprogram}{US Research Software Sustainability Institute}
+\newcommand{\program}{URSSI}
 
 \newcommand{\pyhf}{\texttt{pyhf}}
 
@@ -49,36 +51,61 @@ anchorcolor = blue]{hyperref}
 \begin{document}
 \pagestyle{fancy}
 
-% * [ ] A concise research proposal (e.g. 2-3 pages)
-
-% * Make sure to include short (on the road to tenure), medium (10-15 years), and long term ideas (where is career going post LHC) in the research statement
-
-% Successful candidates for the second position on “scientific software infrastructure” will seek to advance the **reliable and efficient development and application of artificial intelligence/machine learning methods through the development of scalable, extensible, and interoperable software, including platforms that support computational reproducibility and open science**.
-% Scientific domain questions of interest include the data-driven discovery of new materials to address climate change based on AI/ML and high-dimensional sparse statistics.
-% We will consider creative and energetic candidates who show promise and/or accomplishment in research, teaching, and mentoring.
-% The Department of Statistics offers a PhD program, a professional master’s program, and undergraduate majors in Statistics and in Data Science (the latter jointly with EECS).
-% In particular, the Statistics and Data Science majors provide opportunities to develop domain emphasis courses related to scientific computing and machine learning in chemistry, physics, and materials science.
-% The person offered this position would have the opportunity to engage in teaching, course development, and mentoring for each of these programs.
-% They would join a diverse group of colleagues in the Departments of Statistics and EECS, with world-renowned expertise in both AI/ML and open-source scientific computing, and a sustained tradition of collaboration in data science with disciplines spanning the natural and social sciences.
-% They would have the opportunity to interact and collaborate with colleagues in the Departments of Chemistry, Materials Science and Engineering, and Physics, among others, as well as a possible future interdisciplinary department in CDSS, BIDMaP, and the nearby Lawrence Berkeley National Laboratory.
-
-% * this is mainly written to a HEP audience, but the opening is for any experimental physics. I would add a little bit at the beginning to contextualize your work in HEP for a non-HEP audience.
-%    - this also applies to the cover letter. Re-read your opening paragraph with the idea that the audience includes non HEP people.
-% * You don’t say much about AI. One opportunity is in section 3 when you talk about SBI. You might make it explicit that the SBI revolution is powered by AI/ML and also maybe add a few sentences for those that don’t know what SBI is.
-%    - you might consider putting AI into the section title for section 3
-% * in section 4 you might connect differentiable programming and automatic differentiation to AI. You may know about the quote from Yann LeCun “deep learning is dead, long live differentiable programming”
-
 \section{Project Goals and Objectives}
 
-State the track that your project is most closely aligned with.
-Provide a brief overview of the project including related research, and previous efforts.
-Provide clear, measurable goals that will be accomplished within 6 months.
-Include specific objectives that contribute to the broader URSSI mission and research track.
+% * State the track that your project is most closely aligned with.
+
+% * Provide a brief overview of the project including related research, and previous efforts.
+% * Provide clear, measurable goals that will be accomplished within 6 months.
+% * Include specific objectives that contribute to the broader URSSI mission and research track.
+
+Beyond packaging their software, scientists need reproducible computing environments for ``applications'' that need to be run across multiple computing platforms --- e.g. scientific analyses, visualization tools, data transformation pipelines, and artificial intelligence (AI) and machine learning (ML) applications on hardware accelerator platforms.
+While workflow engines and Linux containers offer a gold standard for scientific computing reproducibility, they require additional layers of training and software engineering knowledge.
+Modern open source multi-platform environment management tools, e.g. \texttt{pixi}~\citemain{Arts_pixi}, provide automatic multi-platform hash-level lock file support for all dependencies --- down to the compiler level --- of software on Python or Conda package indexes (e.g. PyPI and conda-forge) while still providing a high level interface well suited for scientists.
+We are now at a point where well supported, robust technological solutions exist for even highly complex software applications.
+What is currently lacking is the education and training by the broader scientific software community to adopt these technologies and build community standards of practice around them.
+
+\subsection{Project Focus and Goals}
+\textbf{TODO: REMOVE packaging component and focus just on reproducibile applications}
+As a \fullprogram{} (\program{}) Fellow, I will develop an open source course (website) on the process of packaging scientific and AI/ML software and making reusable applications; I will teach the course as a module at multiple workshops and conference tutorial sessions.
+The course will have a focus on packaging scientific Python libraries and distribution on package indexes (e.g. PyPI~\citemain{PyPI_website} and conda-forge~\citemain{conda-forge_community}), but will be scoped broadly and cover packaging and distribution of C and C++ libraries on conda-forge as well.
+The course will cover using these tools to create reproducible software environments for AI/ML applications, including all CUDA dependencies, which is becoming a more relevant issue as AI/ML becomes a standard part of modern science.
+I will also create a workshop to teach the content of the course to scientists.
+The workshop will be incubated at the \fullinstitute{} Data Science Hub, and will solicit a national call for applications for workshop participants, whose travel will be supported by the Fellow award funds.
+This course will also be submitted as a proposal for a tutorial at the 2025 SciPy conference~\citemain{scipy-2025}, and will be recommended as a module for future URSSI workshops.
+
+\textbf{TODO: Mention that pixi is chosen given its features, open source, and that the pixi development team has expressed their support and willingness to collaborate on the proposed project.}
+
+\subsection{Project Objectives and Deliverables}
+This project will deliver permissively licensed open source educational material --- intended for community reuse --- and executable examples for real scientific software applications with a focus on AI/ML.
+It will also result in the training of a cohort of early career scientists across multiple scientific domains on best practices for reproducible scientific applications and will additionally identify areas of high complexity and significant difficulty in their current workflows that can either be alleviated or addressed through further technological development.
+It will additionally serve as a testing ground for \texttt{pixi} to handle real world complex scientific workflows and identify edge cases that will be addressed upstream in the \texttt{pixi} GitHub repository in collaboration with the \texttt{pixi} developers.
+
+This project proposal is best aligned with the Scientific Software Sustainability track as it provides actionable methods that can be adopted by the broader scientific software community for better software sustainability and reproducibility.
+It also has significant overlap with the Software Education Research track, in that project products could be used in future \program{} schools, though the focus is on adoption of technologies and best practices rather than pedagogical research.
+
+\textbf{TODO: Clarify how this is different than MLFlow frozen environments.}
 
 \section{Expected Impact on Scientific Software Community}
 
 Direct and indirect benefits to the research software community.
 How will your work improve scientific software development practices?
+
+Reproducible software environments are critical not only for reproducibility of results, but, arguably more importantly, for practically sharing complex scientific environments with many dependencies for scientists to work collaboratively.
+The open source website, course, and workshop series together will practically teach researchers how to make their software reusable and their exact software environments easily and immediately shareable.
+It is without exaggeration that today researchers can spend hours building bespoke software environments for their work that have complex enough dependency trees that they require great effort to rebuild even on the same machines.
+Providing researchers with not only a best practice workflow for lock-file-based reproducible software environments, but also the tools to immediately implement them across multiple platforms will scale the human time savings across science significantly as researchers adopt these methods in their research groups.
+It will also increase computational savings by avoiding running of scientific workflows with improperly defined environments that could alter results, fail to reproduce key findings, or result in errors and crashes.
+As GPU based workflows are notoriously difficult for sharing their exact environment specifications, this will provide a huge reproducibility benefit.
+Additionally, I will share the course widely and encourage other scientists to adopt it in their own research and teaching.
+
+Most scientists do not receive a formal education in software development and engineering and the associated best practices.
+However, these skills are vital to tackle the complex scientific questions of today.
+Through the course and workshops I will be able to train early career researchers (university and graduate students, and junior postdocs) across multiple scientific domains on how to improve the maintainability of their software, reproducibility of their work, and ultimately the quality of their science.
+The impact of investing in the technical education of early career researchers will grow over time as they bring what they have learned to bear in their research and spread their knowledge in new collaborations.
+All the course and workshop content, and the website source code, will be open source under a permissive license, making it easy for other researchers to use the course material in their own lectures and workshops.
+Access to high quality scientific computing educational resources is an equity issue and open sourcing that knowledge makes it more accessible. The course will also not be static, but will be updated as new improvements and recommendations are made available.
+I will encourage sharing of the material and by having the workshops target a wide range of scientific domains I will ensure that this knowledge spreads and helps multiple scientific communities develop better workflows and practices around reproducible and sustainable software development.
 
 \section{Implementation Plan}
 
