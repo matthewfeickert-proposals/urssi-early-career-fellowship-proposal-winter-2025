@@ -59,9 +59,9 @@ anchorcolor = blue]{hyperref}
 % * Provide clear, measurable goals that will be accomplished within 6 months.
 % * Include specific objectives that contribute to the broader URSSI mission and research track.
 
-Beyond packaging their software, scientists need reproducible computing environments for ``applications'' that need to be run across multiple computing platforms --- e.g. scientific analyses, visualization tools, data transformation pipelines, and artificial intelligence (AI) and machine learning (ML) applications on hardware accelerator platforms.
+Beyond packaging their software, researchers need reproducible computing environments for ``applications'' that need to be run across multiple computing platforms --- e.g. scientific analyses, visualization tools, data transformation pipelines, and artificial intelligence (AI) and machine learning (ML) applications on hardware accelerator platforms.
 While workflow engines and Linux containers offer a gold standard for scientific computing reproducibility, they require additional layers of training and software engineering knowledge.
-Modern open source multi-platform environment management tools, e.g. \texttt{pixi}~\cite{Arts_pixi}, provide automatic multi-platform hash-level lock file support for all dependencies --- down to the compiler level --- of software on Python or Conda package indexes (e.g. PyPI and conda-forge) while still providing a high level interface well suited for scientists.
+Modern open source multi-platform environment management tools, e.g. \texttt{pixi}~\cite{Arts_pixi}, provide automatic multi-platform hash-level lock file support for all dependencies --- down to the compiler level --- of software on Python or Conda package indexes (e.g. PyPI and conda-forge) while still providing a high level interface well suited for researchers.
 We are now at a point where well supported, robust technological solutions exist for even highly complex software applications.
 What is currently lacking is the education and training by the broader scientific software community to adopt these technologies and build community standards of practice around them.
 
@@ -70,7 +70,7 @@ What is currently lacking is the education and training by the broader scientifi
 As a \fullprogram{} (\program{}) Fellow, I will develop an open source course (website) on the process of packaging scientific and AI/ML software and making reusable applications; I will teach the course as a module at multiple workshops and conference tutorial sessions.
 The course will have a focus on packaging scientific Python libraries and distribution on package indexes (e.g. PyPI~\cite{PyPI_website} and conda-forge~\cite{conda-forge_community}), but will be scoped broadly and cover packaging and distribution of C and C++ libraries on conda-forge as well.
 The course will cover using these tools to create reproducible software environments for AI/ML applications, including all CUDA dependencies, which is becoming a more relevant issue as AI/ML becomes a standard part of modern science.
-I will also create a workshop to teach the content of the course to scientists.
+I will also create a workshop to teach the content of the course to researchers.
 The workshop will be incubated at the \fullinstitute{} (\institute{}) Data Science Hub (DSH)~\cite{data_science_hub}, and will solicit a national call for applications for workshop participants, whose travel will be supported by the Fellow award funds.
 This course will also be submitted as a proposal for a tutorial at the 2025 SciPy conference~\cite{scipy-2025}, and will be recommended as a module for future URSSI workshops.
 
@@ -78,7 +78,7 @@ This course will also be submitted as a proposal for a tutorial at the 2025 SciP
 
 \subsection{Project Objectives and Deliverables}
 This project will deliver permissively licensed open source educational material --- intended for community reuse --- and executable examples for real scientific software applications with a focus on AI/ML.
-It will also result in the training of a cohort of early career scientists across multiple scientific domains on best practices for reproducible scientific applications and will additionally identify areas of high complexity and significant difficulty in their current workflows that can either be alleviated or addressed through further technological development.
+It will also result in the training of a cohort of early career researchers across multiple scientific domains on best practices for reproducible scientific applications and will additionally identify areas of high complexity and significant difficulty in their current workflows that can either be alleviated or addressed through further technological development.
 It will additionally serve as a testing ground for \texttt{pixi} to handle real world complex scientific workflows and identify edge cases that will be addressed upstream in the \texttt{pixi} GitHub repository in collaboration with the \texttt{pixi} developers.
 
 This project proposal is best aligned with the Scientific Software Sustainability track as it provides actionable methods that can be adopted by the broader scientific software community for better software sustainability and reproducibility.
@@ -91,13 +91,13 @@ It also has significant overlap with the Software Education Research track, in t
 Direct and indirect benefits to the research software community.
 How will your work improve scientific software development practices?
 
-Reproducible software environments are critical not only for reproducibility of results, but, arguably more importantly, for practically sharing complex scientific environments with many dependencies for scientists to work collaboratively.
+Reproducible software environments are critical not only for reproducibility of results, but, arguably more importantly, for practically sharing complex scientific environments with many dependencies for researchers to work collaboratively.
 The open source website, course, and workshop series together will practically teach researchers how to make their software reusable and their exact software environments easily and immediately shareable.
 It is without exaggeration that today researchers can spend hours building bespoke software environments for their work that have complex enough dependency trees that they require great effort to rebuild even on the same machines.
 Providing researchers with not only a best practice workflow for lock-file-based reproducible software environments, but also the tools to immediately implement them across multiple platforms will scale the human time savings across science significantly as researchers adopt these methods in their research groups.
 It will also increase computational savings by avoiding running of scientific workflows with improperly defined environments that could alter results, fail to reproduce key findings, or result in errors and crashes.
 As GPU based workflows are notoriously difficult for sharing their exact environment specifications, this will provide a huge reproducibility benefit.
-Additionally, I will share the course widely and encourage other scientists to adopt it in their own research and teaching.
+Additionally, I will share the course widely and encourage other researchers to adopt it in their own research and teaching.
 
 Most scientists do not receive a formal education in software development and engineering and the associated best practices.
 However, these skills are vital to tackle the complex scientific questions of today.
