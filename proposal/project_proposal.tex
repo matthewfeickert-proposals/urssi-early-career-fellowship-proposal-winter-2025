@@ -18,9 +18,6 @@ anchorcolor = blue]{hyperref}
 \usepackage{siunitx}
 \sisetup{range-phrase={\text{--}},range-units=single}
 
-\usepackage{multibib}
-\newcites{main}{References}
-
 \linespread{1.0}
 
 \hyphenation{ATLAS}
@@ -61,18 +58,18 @@ anchorcolor = blue]{hyperref}
 
 Beyond packaging their software, scientists need reproducible computing environments for ``applications'' that need to be run across multiple computing platforms --- e.g. scientific analyses, visualization tools, data transformation pipelines, and artificial intelligence (AI) and machine learning (ML) applications on hardware accelerator platforms.
 While workflow engines and Linux containers offer a gold standard for scientific computing reproducibility, they require additional layers of training and software engineering knowledge.
-Modern open source multi-platform environment management tools, e.g. \texttt{pixi}~\citemain{Arts_pixi}, provide automatic multi-platform hash-level lock file support for all dependencies --- down to the compiler level --- of software on Python or Conda package indexes (e.g. PyPI and conda-forge) while still providing a high level interface well suited for scientists.
+Modern open source multi-platform environment management tools, e.g. \texttt{pixi}~\cite{Arts_pixi}, provide automatic multi-platform hash-level lock file support for all dependencies --- down to the compiler level --- of software on Python or Conda package indexes (e.g. PyPI and conda-forge) while still providing a high level interface well suited for scientists.
 We are now at a point where well supported, robust technological solutions exist for even highly complex software applications.
 What is currently lacking is the education and training by the broader scientific software community to adopt these technologies and build community standards of practice around them.
 
 \subsection{Project Focus and Goals}
 \textbf{TODO: REMOVE packaging component and focus just on reproducibile applications}
 As a \fullprogram{} (\program{}) Fellow, I will develop an open source course (website) on the process of packaging scientific and AI/ML software and making reusable applications; I will teach the course as a module at multiple workshops and conference tutorial sessions.
-The course will have a focus on packaging scientific Python libraries and distribution on package indexes (e.g. PyPI~\citemain{PyPI_website} and conda-forge~\citemain{conda-forge_community}), but will be scoped broadly and cover packaging and distribution of C and C++ libraries on conda-forge as well.
+The course will have a focus on packaging scientific Python libraries and distribution on package indexes (e.g. PyPI~\cite{PyPI_website} and conda-forge~\cite{conda-forge_community}), but will be scoped broadly and cover packaging and distribution of C and C++ libraries on conda-forge as well.
 The course will cover using these tools to create reproducible software environments for AI/ML applications, including all CUDA dependencies, which is becoming a more relevant issue as AI/ML becomes a standard part of modern science.
 I will also create a workshop to teach the content of the course to scientists.
 The workshop will be incubated at the \fullinstitute{} Data Science Hub, and will solicit a national call for applications for workshop participants, whose travel will be supported by the Fellow award funds.
-This course will also be submitted as a proposal for a tutorial at the 2025 SciPy conference~\citemain{scipy-2025}, and will be recommended as a module for future URSSI workshops.
+This course will also be submitted as a proposal for a tutorial at the 2025 SciPy conference~\cite{scipy-2025}, and will be recommended as a module for future URSSI workshops.
 
 \textbf{TODO: Mention that pixi is chosen given its features, open source, and that the pixi development team has expressed their support and willingness to collaborate on the proposed project.}
 
@@ -117,7 +114,7 @@ Include specific milestones and check-in points.
     \begin{itemize}
       \item Develop a first draft of the course.
       \item Submit tutorial proposal for the course to SciPy 2025.
-      \item Begin the process of contributing the course to the The Carpentries by creating a proposal GitHub issue with the The Carpentries Incubator~\citemain{carpentries_incubator_proposals}.
+      \item Begin the process of contributing the course to the The Carpentries by creating a proposal GitHub issue with the The Carpentries Incubator~\cite{carpentries_incubator_proposals}.
     \end{itemize}
   \item Month 2 (March 2025)
     \begin{itemize}
@@ -171,9 +168,8 @@ If needed
 \vspace*{-0.25cm}
 \begin{footnotesize}
 %
- \bibliographystylemain{atlasBibStyleWithTitle}
- \bibliographymain{main}
- %\nocitemain{*}
+ \bibliographystyle{atlasBibStyleWithTitle}
+ \bibliography{main}
 %
 \end{footnotesize}
 \end{document}
