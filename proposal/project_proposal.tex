@@ -36,6 +36,7 @@ anchorcolor = blue]{hyperref}
 \newcommand{\program}{URSSI}
 
 \newcommand{\pyhf}{\texttt{pyhf}}
+\newcommand{\pixi}{\texttt{pixi}}
 
 \newcommand{\milestone}{\textbf{\textrm{M}}}
 \newcommand{\deliverable}{\textbf{\textrm{D}}}
@@ -59,32 +60,35 @@ anchorcolor = blue]{hyperref}
 % * Provide clear, measurable goals that will be accomplished within 6 months.
 % * Include specific objectives that contribute to the broader URSSI mission and research track.
 
-Beyond packaging their software, researchers need reproducible computing environments for ``applications'' that need to be run across multiple computing platforms --- e.g. scientific analyses, visualization tools, data transformation pipelines, and artificial intelligence (AI) and machine learning (ML) applications on hardware accelerator platforms.
+A critical component of research software sustainability is the reproducibility of the software and computing environments software operates and ``lives'' in.
+Providing software as a ``package'' --- a standardized distribution of all source or binary components of the software required for use along with identifying metadata --- goes a long way to improved reproducibility of software libraries.
+However, more researchers are consumers of libraries than developers of them, but still need reproducible computing environments for research software ``applications'' that may to be run across multiple computing platforms --- e.g. scientific analyses, visualization tools, data transformation pipelines, and artificial intelligence (AI) and machine learning (ML) applications on hardware accelerator platforms (e.g. GPUs).
 While workflow engines and Linux containers offer a gold standard for scientific computing reproducibility, they require additional layers of training and software engineering knowledge.
-Modern open source multi-platform environment management tools, e.g. \texttt{pixi}~\cite{Arts_pixi}, provide automatic multi-platform hash-level lock file support for all dependencies --- down to the compiler level --- of software on Python or Conda package indexes (e.g. PyPI and conda-forge) while still providing a high level interface well suited for researchers.
+Modern open source multi-platform environment management tools, e.g. \pixi{}~\cite{Arts_pixi}, provide automatic multi-platform hash-level lock file support for all dependencies --- down to the compiler level --- of software on Python or Conda package indexes (e.g. PyPI and conda-forge) while still providing a high level interface well suited for researchers.
 We are now at a point where well supported, robust technological solutions exist for even highly complex software applications.
 What is currently lacking is the education and training by the broader scientific software community to adopt these technologies and build community standards of practice around them.
 
 \subsection{Project Focus and Goals}
-\textbf{TODO: REMOVE packaging component and focus just on reproducible applications}
-As a \fullprogram{} (\program{}) Fellow, I will develop an open source course (website) on the process of packaging scientific and AI/ML software and making reusable applications; I will teach the course as a module at multiple workshops and conference tutorial sessions.
-The course will have a focus on packaging scientific Python libraries and distribution on package indexes (e.g. PyPI~\cite{PyPI_website} and conda-forge~\cite{conda-forge_community}), but will be scoped broadly and cover packaging and distribution of C and C++ libraries on conda-forge as well.
-The course will cover using these tools to create reproducible software environments for AI/ML applications, including all CUDA dependencies, which is becoming a more relevant issue as AI/ML becomes a standard part of modern science.
-I will also create a workshop to teach the content of the course to researchers.
-The workshop will be incubated at the \fullinstitute{} (\institute{}) Data Science Hub (DSH)~\cite{data_science_hub}, and will solicit a national call for applications for workshop participants, whose travel will be supported by the Fellow award funds.
-This course will also be submitted as a proposal for a tutorial at the 2025 SciPy conference~\cite{scipy-2025}, and will be recommended as a module for future URSSI workshops.
 
-\textbf{TODO: Mention that pixi is chosen given its features, open source, and that the pixi development team has expressed their support and willingness to collaborate on the proposed project.}
+As a \fullprogram{} (\program{}) Fellow, I will develop an open source course (website) on creating reproducible software environments for scientific applications including AI/ML applications, which require specialized hardware accelerator support.
+The course will cover using \pixi{} to create and use reproducible software environments for Python applications using software distributed on public package indexes (e.g. PyPI~\cite{PyPI_website} and conda-forge~\cite{conda-forge_community}), but will be scoped broadly to cover applications for \texttt{C}, \texttt{C++}, and Fortran libraries on conda-forge as well.
+There will be a particular focus on using these tools for creating environments of AI/ML applications at scale, including all CUDA dependencies, which is becoming a more relevant issue as AI/ML becomes a standard part of modern science.
+I will also create a workshop targeting the broader scientific software community to teach the content of the course to researchers from multiple domains.
+The workshop will be incubated at the \fullinstitute{} (\institute{}) Data Science Hub (DSH)~\cite{data_science_hub}, and will solicit a national call for applications for workshop participants, whose travel will be supported by the Fellow award funds as covered in the included proposed budget.
+A version of the course will also be submitted as a tutorial proposal at the 2025 SciPy conference~\cite{scipy-2025}, and will be recommended as a module for future URSSI workshops.
+%
+% \textbf{TODO: Mention that pixi is chosen given its features, open source, and that the pixi development team has expressed their support and willingness to collaborate on the proposed project.}
 
 \subsection{Project Objectives and Deliverables}
 This project will deliver permissively licensed open source educational material --- intended for community reuse --- and executable examples for real scientific software applications with a focus on AI/ML.
+The material will be created with the intent to contribute it as a lesson module to The Carpentries Incubator~\cite{carpentries_incubator_proposals} and, once peer-reviewed, The Carpentries Lab~\cite{carpentries_lab} curriculum, where it will be maintained as an open source community resource.
 It will also result in the training of a cohort of early career researchers across multiple scientific domains on best practices for reproducible scientific applications and will additionally identify areas of high complexity and significant difficulty in their current workflows that can either be alleviated or addressed through further technological development.
-It will additionally serve as a testing ground for \texttt{pixi} to handle real world complex scientific workflows and identify edge cases that will be addressed upstream in the \texttt{pixi} GitHub repository in collaboration with the \texttt{pixi} developers.
+It will additionally serve as a testing ground for \pixi{} to handle real world complex scientific workflows and identify edge cases that will be addressed upstream in the \pixi{} GitHub repository in collaboration with the \pixi{} developers.
 
-This project proposal is best aligned with the Scientific Software Sustainability track as it provides actionable methods that can be adopted by the broader scientific software community for better software sustainability and reproducibility.
-It also has significant overlap with the Software Education Research track, in that project products could be used in future \program{} schools, though the focus is on adoption of technologies and best practices rather than pedagogical research.
-
-\textbf{TODO: Clarify how this is different than MLFlow frozen environments.}
+This project proposal is best aligned with the \textbf{Scientific Software Sustainability} track as it provides actionable methods that can be adopted by the broader scientific software community for better software sustainability and reproducibility.
+It also has significant overlap with the \textbf{Software Education Research} track, in that project products could be used in future \program{} schools, though the focus is on adoption of technologies and best practices rather than pedagogical research.
+%
+% \textbf{TODO: Clarify how this is different than MLFlow frozen environments.}
 
 \section{Expected Impact on Scientific Software Community}
 
