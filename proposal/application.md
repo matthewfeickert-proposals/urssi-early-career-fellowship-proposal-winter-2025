@@ -64,7 +64,7 @@ _Please provide a brief justification for each category (2-3 sentences)._
 1. Stipend/salary: $8000 USD
 
 * $7000 USD for Data Science Hub facilitator staff time and work.
-* $1000 USD for pixi engineer time to review technical material.
+* $1000 USD for pixi engineer time to provide a technical review of all course material.
 
 2. Travel: $5000 USD
 
