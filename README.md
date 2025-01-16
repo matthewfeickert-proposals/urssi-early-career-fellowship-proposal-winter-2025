@@ -85,17 +85,17 @@ To submit an application please provide the following information, your CV, and 
 2. Project Proposal (upload as PDF), which should be no longer than three single-space pages using an 11-inch font, not including any references.
 Proposals should include:
 
-* Project Goals and Objectives: State the track that your project is most closely aligned with; Provide a brief overview of the project including related research, and previous efforts; and, Provide clear, measurable goals that will be accomplished within 6 months.
+* **Project Goals and Objectives:** State the track that your project is most closely aligned with; Provide a brief overview of the project including related research, and previous efforts; and, Provide clear, measurable goals that will be accomplished within 6 months.
 Include specific objectives that contribute to the broader URSSI mission and research track.
-* Expected Impact on Scientific Software Community: Direct and indirect benefits to the research software community.
+* **Expected Impact on Scientific Software Community:** Direct and indirect benefits to the research software community.
 How will your work improve scientific software development practices?
-* Implementation Plan: Month-by-month breakdown of activities, methods, and approaches.
+* **Implementation Plan:** Month-by-month breakdown of activities, methods, and approaches.
 Include specific milestones and check-in points.
-* Community Engagement Strategy: How will you involve and benefit the broader scientific software community?
+* **Community Engagement Strategy:** How will you involve and benefit the broader scientific software community?
 Include specific outreach and collaboration plans.
-* Evaluation Metrics: Concrete ways to measure project success.
+* **Evaluation Metrics:** Concrete ways to measure project success.
 Include both quantitative and qualitative metrics.
-* Timeline and Deliverables Specific six-month timeline with monthly milestones and concrete deliverables.
+* **Timeline and Deliverables:** Specific six-month timeline with monthly milestones and concrete deliverables.
 Example structure:
    - Month 1: Project setup and initial research
    - Month 2-3: Development/Investigation phase
