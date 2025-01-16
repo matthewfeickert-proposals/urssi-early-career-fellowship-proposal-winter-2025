@@ -65,7 +65,7 @@ anchorcolor = blue]{hyperref}
 
 A critical component of research software sustainability is the reproducibility of the software and computing environments software operates and ``lives'' in.
 Providing software as a ``package'' --- a standardized distribution of all source or binary components of the software required for use along with identifying metadata --- goes a long way to improved reproducibility of software libraries.
-However, more researchers are consumers of libraries than developers of them, but still need reproducible computing environments for research software applications that may to be run across multiple computing platforms --- e.g. scientific analyses, visualization tools, data transformation pipelines, and artificial intelligence (AI) and machine learning (ML) applications on hardware accelerator platforms (e.g. GPUs).
+However, more researchers are consumers of libraries than developers of them, but still need reproducible computing environments for research software applications that may be run across multiple computing platforms --- e.g. scientific analyses, visualization tools, data transformation pipelines, and artificial intelligence (AI) and machine learning (ML) applications on hardware accelerator platforms (e.g. GPUs).
 While workflow engines and Linux containers offer a gold standard for scientific computing reproducibility, they require additional layers of training and software engineering knowledge.
 Modern open source multi-platform environment management tools, e.g. \pixi{}~\cite{Arts_pixi}, provide automatic multi-platform hash-level lock file support for all dependencies --- down to the compiler level --- of software on public package indexes (e.g. PyPI~\cite{PyPI_website} and conda-forge~\cite{conda-forge_community}) while still providing a high level interface well suited for researchers.
 We are now at a point where well supported, robust technological solutions exist, even for applications with highly complex software environments.
@@ -73,10 +73,10 @@ What is currently lacking is the education and training by the broader scientifi
 
 \subsection{Project Focus and Goals}
 
-As a \fullprogram{} (\program{}) Fellow, I will develop an open source course (website) on creating reproducible software environments for scientific applications including AI/ML applications, which require specialized hardware accelerator support.
-The course will cover using \pixi{} to create and use reproducible software environments for Python applications using version controlled research software and software distributed on public package indexes, but will be scoped broadly to cover applications for \texttt{C}, \texttt{C++}, and Fortran libraries on conda-forge as well.
+As a \fullprogram{} (\program{}) Fellow, I will develop an open source course (website) on creating reproducible software environments for scientific and AI/ML applications, which require specialized hardware accelerator support.
+The course will cover using \pixi{} to create and use reproducible software environments for Python applications using version controlled research software and software distributed on public package indexes, but will be broadly scoped to cover applications for \texttt{C}, \texttt{C++}, and Fortran libraries on conda-forge as well.
 There will be a particular focus on using these tools for creating reproducible environments (even including all CUDA~\cite{CUDA_paper} dependencies) for AI/ML applications at scale, which is becoming a more relevant issue as AI/ML becomes a standard part of modern science.
-I will also create a workshop targeting the broader scientific software community to teach the content of the course to researchers from multiple domains.
+I will also create a workshop targeting the broader scientific software community to teach the content of the course to researchers from multiple scientific domains.
 The workshop will be incubated at the \fullinstitute{} (\institute{}) Data Science Hub (DSH)~\cite{data_science_hub} with additional support from the Data Science Institute~\cite{uwmadison_dsi}, and will solicit a national call for applications for workshop participants, whose travel and lodging will be supported by the Fellow award funds as covered in the included proposed budget.
 A version of the course will also be submitted as a tutorial proposal at the 2025 SciPy conference~\cite{scipy-2025}, and will be recommended as an optional module for future URSSI workshops and schools.
 %
@@ -85,13 +85,13 @@ A version of the course will also be submitted as a tutorial proposal at the 202
 \subsection{Project Objectives and Deliverables}
 This project will deliver permissively licensed open source educational material --- intended for community reuse --- and executable examples for real scientific software applications with a focus on AI/ML.
 The material will be created with the intent to contribute it as a lesson module to The Carpentries Incubator~\cite{carpentries_incubator_proposals} and, once peer-reviewed, The Carpentries Lab~\cite{carpentries_lab} curriculum, where it will be maintained as an open source community resource.
-It will also result in the training of a cohort of early career researchers across multiple scientific domains on best practices for reproducible scientific applications and will additionally identify areas of high complexity and significant difficulty in their current workflows that can either be alleviated or addressed through further technological development.
-It will additionally serve as a testing ground for \pixi{} to handle real world complex scientific workflows and identify edge cases that will be addressed upstream in the \pixi{} GitHub repository in collaboration with the \pixi{} developers.
+It will also result in the training of a cohort of early career researchers across multiple scientific domains on best practices for reproducible scientific applications and will additionally identify areas of high complexity and significant difficulty in their current workflows, that can either be alleviated or addressed through further technological development.
+While \pixi{} is already mature and used for real world complex scientific applications, any edge cases discovered will be raised and addressed upstream in the \pixi{} GitHub repository in collaboration with the \pixi{} developers.
 Each workshop will have a pre and post-workshop questionnaire that will be used to not only evaluate the clarity of the content and the efficiency at conveying the material, but also the level of information that the participants learned and found \emph{actionably useful} in their own research post-workshop.
 This actionable information will be highlighted as a primary focus of the revised course material.
 
 This project proposal is best aligned with the \textbf{Scientific Software Sustainability} track as it provides actionable methods that can be adopted by the broader scientific software community for better software sustainability and reproducibility.
-It also has significant overlap with the \textbf{Software Education Research} track, in that project products could be used in future \program{} schools, though the focus is on adoption of technologies and best practices rather than pedagogical research.
+It also has significant overlap with the \textbf{Software Education Research} track, as project products could be used in future \program{} schools, though the focus is on adoption of technologies and best practices rather than pedagogical research.
 %
 % \textbf{TODO: Clarify how this is different than MLFlow frozen environments.}
 
@@ -106,7 +106,7 @@ It is without exaggeration that today researchers can spend hours building bespo
 Providing researchers with a best practice workflow for lock-file-based reproducible software environments, and the tools to immediately implement them across multiple platforms, will scale the human time savings across science significantly as researchers adopt these methods across their research groups.
 It will also increase computational savings by avoiding running of scientific workflows with improperly defined environments that could alter results, fail to reproduce key findings, or result in errors and crashes.
 As GPU based workflows are notoriously difficult for sharing their exact environment specifications, this will provide a huge reproducibility benefit.
-To ensure the highest technical quality of the course, the \pixi{} development team have agreed to provide a technical review of the course content.
+To ensure the highest technical quality of the course, the \pixi{} development team has agreed to provide a technical review of the course content.
 Additionally, I will share the course widely and encourage other researchers to adopt it in their own research and teaching.
 
 % Most researchers do not receive a formal education in software development and engineering and the associated best practices.
@@ -178,8 +178,8 @@ Milestones and deliverables are noted by \milestone{} and \deliverable{}, respec
   \item \textbf{Month 1} (February 2025): Project setup
     \begin{itemize}
       \item Develop a first draft of the course.
-      \item \milestone{} Submit tutorial proposal for the course to SciPy 2025.
-      \item \milestone{} Begin the process of contributing the course to the The Carpentries by creating a proposal GitHub issue with The Carpentries Incubator~\cite{carpentries_incubator_proposals}.
+      \item \milestone{} Submit a tutorial proposal for the course to SciPy 2025.
+      \item \milestone{} Begin the process of contributing the course to The Carpentries by creating a proposal GitHub issue with The Carpentries Incubator~\cite{carpentries_incubator_proposals}.
     \end{itemize}
   \item \textbf{Month 2} (March 2025): Iteration and revision
     \begin{itemize}
@@ -207,7 +207,7 @@ Milestones and deliverables are noted by \milestone{} and \deliverable{}, respec
     \end{itemize}
   \item \textbf{Month 6} (July 2025): Dissemination with broader community and documentation
     \begin{itemize}
-      \item \deliverable{} Teach the course as a tutorial at SciPy 2025 international conference (pending acceptance).
+      \item \deliverable{} Teach the course as a tutorial at the SciPy 2025 international conference (pending acceptance).
       \item \deliverable{} Submit the course to be peer-reviewed for approval to be included in The Carpentries Lab.
       \item \deliverable{} Publication of the anonymized post-workshop questionnaire results as an interactive report generated with MyST Markdown.
     \end{itemize}
