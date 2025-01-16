@@ -88,6 +88,4 @@ A sponsorship request will be submitted to the UW-Madison Data Science Institute
 None
 * Room costs for the workshops at the DSH would be $400 USD per day but have been agreed to be waived for the workshops.
 
-### Total requested budget
-
-$ 23000 USD
+Total Requested: $23000 USD
