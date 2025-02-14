@@ -71,7 +71,7 @@ _Please provide a brief justification for each category (2-3 sentences)._
 This travel funding is needed as I work remotely from UW-Madison given my research.
 The amount requested is based on prices for flights to Madison, Wisconsin and lodging near the University of Wisconsin-Madison in 2024.
 
-3. Research Resources (< $10k): $10000 USD
+3. Research Resources: $10000 USD
 
 * $4000 USD for two (2) weeks worth of Data Science Hub facilitator staff time and work integrated across the project duration.
 * $1000 USD for ten (10) hours of contracted pixi developer time to provide a technical review of all course material.
