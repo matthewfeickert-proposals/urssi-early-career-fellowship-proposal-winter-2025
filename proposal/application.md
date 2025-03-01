@@ -1,5 +1,9 @@
 # [URSSI Fellowship Application 2024-2025](https://urssi.us/winter-2025-fellowship-application/)
 
+## Proposal title
+
+Reproducible Machine Learning Workflows for Scientists
+
 ## Email
 
 matthew.feickert@cern.ch
